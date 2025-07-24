@@ -1,4 +1,4 @@
-*** Prerequisites ***
+# *** Prerequisites ***
 
 fastapi / uvicorn:
 
@@ -18,7 +18,7 @@ all:
 
 pip install fastapi uvicorn sqlalchemy psycopg2-binary requests
 
-*** to run example get api server ***
+# *** to run example get api server ***
 
 uvicorn main:app --reload
 
