@@ -25,7 +25,7 @@ uvicorn main:app --reload
 
 
 
-## temp notes - todo move to separate location before github push
+## temp notes 
 
 curl http://localhost:8000/API_PATH
 
