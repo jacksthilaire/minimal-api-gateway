@@ -4,6 +4,8 @@ fastapi / uvicorn:
 
 pip install fastapi uvicorn
 
+setup a virtual environment for development:
+
 python3 -m venv path/to/venv
 source path/to/venv/bin/activate
 python3 -m pip install fastapi uvicorn
