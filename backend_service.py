@@ -1,4 +1,5 @@
-# To run this example service: uvicorn backend_service:app --port 8001 --reload
+# Backend Service: backend_service.py
+# To run this service: uvicorn backend_service:app --port 8001 --reload
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from database import SessionLocal, engine
@@ -6,9 +7,10 @@ import models, crud
 
 models.Base.metadata.create_all(bind=engine)
 
+# create FastAPI instance
 app = FastAPI()
 
-# Dependency to get a DB session
+# Dependency - get a DB session
 def get_db():
     db = SessionLocal()
     try:
