@@ -1,3 +1,6 @@
 api/*
 bin/*
 include/*
+__pycache__/*
+lib/*
+*.cfg
